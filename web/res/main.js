@@ -748,7 +748,7 @@ function () {
         ret = "-";
       
       if (delay== 0)
-        ret = "+";
+        ret = "";
 
       return ret;
     }
