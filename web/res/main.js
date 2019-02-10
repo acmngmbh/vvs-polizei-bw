@@ -1,5 +1,3 @@
-"use strict";
-
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
@@ -37,7 +35,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
     global.Mustache = {};
     factory(global.Mustache);
   }
-})(void 0, function mustacheFactory(mustache) {
+})(this, function mustacheFactory(mustache) {
   var objectToString = Object.prototype.toString;
 
   var isArray = Array.isArray || function isArrayPolyfill(object) {
@@ -464,6 +462,8 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 var Utility =
 /*#__PURE__*/
 function () {
+  "use strict";
+
   function Utility() {
     _classCallCheck(this, Utility);
   }
@@ -523,6 +523,8 @@ function () {
 'use strict';
 
 var VVSDefaultSettings = function VVSDefaultSettings() {
+  "use strict";
+
   _classCallCheck(this, VVSDefaultSettings);
 
   this.maxEntries = 20;
@@ -539,6 +541,8 @@ var VVSDefaultSettings = function VVSDefaultSettings() {
 'use strict';
 
 var VVSTimetableEntry = function VVSTimetableEntry(data) {
+  "use strict";
+
   _classCallCheck(this, VVSTimetableEntry);
 
   if (data) {
@@ -553,6 +557,8 @@ var VVSTimetableEntry = function VVSTimetableEntry(data) {
 var VVS =
 /*#__PURE__*/
 function () {
+  "use strict";
+
   function VVS(station, options) {
     _classCallCheck(this, VVS);
 
@@ -799,6 +805,8 @@ VVS.stationRequestQueue = {};
 var VVSCached =
 /*#__PURE__*/
 function (_VVS) {
+  "use strict";
+
   _inherits(VVSCached, _VVS);
 
   function VVSCached() {
@@ -955,6 +963,8 @@ $.fn.clock = function (options) {
 var VVSStationDefaultSettings =
 /*#__PURE__*/
 function (_VVSDefaultSettings) {
+  "use strict";
+
   _inherits(VVSStationDefaultSettings, _VVSDefaultSettings);
 
   function VVSStationDefaultSettings() {
