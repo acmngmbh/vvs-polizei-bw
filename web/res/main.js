@@ -651,7 +651,15 @@ function () {
               line.numberType = _this.transformLineNumberToType(line.number);
               line.delay = parseInt(line.delay);
               line.delayType = _this.transformDelayToType(line.delay);
-              line.delaySign = ''; //Math.sign(line.delay);
+              
+              if (line.delay > 0)
+                   line.delaySign = '1';
+              if (line.delay < 0)
+                   line.delaySign = '-1';
+              if (line.delay == 0)
+                   line.delaySign = '0';
+              
+              //line.delaySign = //Math.sign(line.delay);
               line.delayAbs = Math.abs(line.delay);
               line.delayClass = _this.calculateDelayClass(line);
               stops.push(line);
