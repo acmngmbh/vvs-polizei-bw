@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!--
+        VVS Station Monitor
+        Github: https://github.com/LUGBB/vvs-station-monitor
+    -->
+
+    <title>VVS Haltestellen-Monitor</title>
+
+    <link rel="apple-touch-icon" href="res/favicon.png">
+    <link rel="icon" type="image/png" href="res/favicon.png">
+    <meta name="msapplication-TileImage" content="res/favicon.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="res/main.css">
+    <style type="text/css">
+        body {
+            font-size: 1.8rem;
+        }
+        .container {
+            padding-top: 1em;
+            padding-bottom: 2em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>VVS Haltestellen-Monitor</h1>
+            <p>
+                webbasierte Anzeige für Haltestellen im VVS-Gebiet (Stuttgart) für Team- und Kundenmonitore und mehr<br>
+                <small>
+                    entwickelt und veröffentlicht von der <a href="//www.lugbb.org">Linux User Group Böblingen/Sindelfingen</a> unter einer OpenSource-Lizenz (MIT)<br>
+                    ⇢ basierend auf der <a href="http://codefor.de/projekte/2015-06-09-stgt-efa-meta-api">OpenData-API vom OK Lab Stuttgart</a>
+                </small>
+            </p>
+            <p style="text-align:right;"><a class="btn btn-primary btn-lg" href="//github.com/LUGBB/vvs-station-monitor" role="button">zum GitHub Projekt &raquo;</a></p>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Haltestellen-Monitore</h2>
+            <p>
+
+                <h3>Bekannte Haltestellen</h3>
+                <ul>
+                    <li><a href="stuttgart.html">Stuttgart Hauptbahnhof</a></li>
+                    <li><a href="vaihingen.html">Vaihingen</a></li>
+                    <li><a href="oesterfeld.html">Österfeld</a></li>
+                    <li><a href="boeblingen.html">Böblingen</a></li>
+                </ul>
+
+                <h3>Wichtige Orte</h3>
+                <ul>
+                    <li><a href="gerberviertel.html">Gerberviertel</a></li>
+                    <li><a href="shackspace.html">Shackspace</a></li>
+                    <li><a href="hohenheim.html">Universität Hohenheim</a></li>
+                    <li><a href="jweiland.html">jweiland.net</a></li>
+                    <li><a href="glockenstr.html">Glockenstraße (Wizemann und Mahle)</a></li>
+                    <li><a href="maubach.html">Maubach</a></li>
+
+                </ul>
+            </p>
+        </div>
+
+
+        <div class="col-md-4" style="font-size: 0.8em;">
+            <h3>Eigene Anzeigen</h3>
+            <p>
+                Du möchtest eine eigene Ansicht für dich oder deine Firma haben?
+                <br><br>
+                Fork einfach unseren
+                <a href="//github.com/LUGBB/vvs-station-monitor">VVS Haltestellen-Monitor auf GitHub</a> oder
+                stell einen Pull-Request ein.
+                <br><br>
+                Die Anzeigen sind frei konfigurierbar und anpassbar. Das Styling basiert auf Bootstrap, kann aber
+                komplett ersetzt werden.<br>
+                Mehr zur Konfiguration findest du
+                <a href="//github.com/LUGBB/vvs-station-monitor/blob/master/README.md">in der README.md auf GitHub.</a>
+            </p>
+        </div>
+
+
+        <div class="col-md-4" style="font-size: 0.8em;">
+            <h3>Voraussetzungen</h3>
+            <ul>
+                <li>Moderner Browser<br><small>(Edge, Firefox, Chrome...)</small></li>
+            </ul>
+
+            <h3>Technologien</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3 (+Animationen)</li>
+                <li>Bootstrap (optional)</li>
+                <li>TypeScript</li>
+                <li>mustache.js Template Engine</li>
+                <li>Gulp</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
