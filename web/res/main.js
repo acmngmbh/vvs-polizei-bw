@@ -749,21 +749,23 @@ function () {
     value: function calculateDelayClass(line) {
       var ret = '';
       $.each(this.configuration.delayClasses, function (index, delayConf) {
-        switch (Math.sign(delayConf.delay)) {
-          case -1:
-            if (line.delay <= delayConf.delay) {
+        
+        
+        if (delayConf.delay > 0)
+        {
+                      if (line.delay >= delayConf.delay) {
               ret = delayConf.className;
             }
-
-            break;
-
-          case 1:
-            if (line.delay >= delayConf.delay) {
-              ret = delayConf.className;
-            }
-
-            break;
         }
+        else
+        {
+                      if (line.delay <= delayConf.delay) {
+              ret = delayConf.className;
+            }
+        }
+        
+        
+
       });
       return ret;
     }
