@@ -566,9 +566,6 @@ function () {
     this.station = station;
     this.configuration = $.extend(new VVSDefaultSettings(), options);
 
-    if (!window.Promise) {
-      throw new Error('Promises not available, please update browsers');
-    }
   }
 
   _createClass(VVS, [{
