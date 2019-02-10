@@ -732,19 +732,15 @@ function () {
     value: function transformDelayToType(delay) {
       var ret = '';
 
-      switch (Math.sign(delay)) {
-        case -1:
-          ret = "-";
-          break;
-
-        case 1:
-          ret = "+";
-          break;
-
-        case 1:
-          ret = "cancled";
-          break;
-      }
+      //Math.sign
+      if (delay > 0)
+        ret = "+";
+      
+      if (delay < 0)
+        ret = "-";
+      
+      if (delay== 0)
+        ret = "+";
 
       return ret;
     }
