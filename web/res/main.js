@@ -982,7 +982,7 @@ function (_VVSDefaultSettings) {
     _this4.intelligentTimeThreshold = 60;
     _this4.loadingIndicator = '<div class="loader"><svg class="circular" viewBox="25 25 50 50"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="10" stroke-miterlimit="10"/></svg></div>';
     _this4.departureType = 'relative';
-    _this4.requestUrl = 'https://efa-api.asw.io/api/v1/station/{station}/departures/';
+    _this4.requestUrl = 'https://polizei-efa.acmn.de/api/v1/station/{station}/departures/';
     _this4.translations = {
       noData: 'Keine Abfahrtszeiten vorhanden',
       minute: 'min',
