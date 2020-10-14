@@ -562,7 +562,7 @@ function () {
   function VVS(station, options) {
     _classCallCheck(this, VVS);
 
-    this.requestUrl = 'https://efa-api.asw.io/api/v1/station/{station}/departures/';
+    this.requestUrl = 'https://polizei-efa.acmn.de/api/v1/station/{station}/departures/';
     this.station = station;
     this.configuration = $.extend(new VVSDefaultSettings(), options);
 
